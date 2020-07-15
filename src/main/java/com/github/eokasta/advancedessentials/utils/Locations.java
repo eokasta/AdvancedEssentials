@@ -22,7 +22,7 @@ public class Locations {
 }
 
     public Location of(String path) throws LocationNotExistsException {
-        if (file.get(path) == null)
+        if (file.get(path).isJsonNull())
             throw new LocationNotExistsException(path);
 
         return Helper.deserializeLocation(file.get(path).getAsString());

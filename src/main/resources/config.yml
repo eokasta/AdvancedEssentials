@@ -1,1 +1,8 @@
 message-language: en
+
+# Teleport Types: NETHER_PORTAL, ENDER_PEARL, END_PORTAL, PLUGIN, COMMAND, UNKNOWN, SPECTATE, DEATH
+block-back-with:
+  - 'END_PORTAL'
+  - 'ENDER_PEARL'
+  - 'NETHER_PORTAL'
+  - 'SPECTATE'

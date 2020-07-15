@@ -1,4 +1,7 @@
 no-permission: "&cYou don't has permission."
+player-not-found: "&cPlayer {0} not found."
 set-spawn: "&aYou have defined the spawn point."
 teleported-spawn: "&aYou have been teleported to Spawn."
+teleported-spawn-other: "&aYou teleported player {0} to Spawn."
 spawn-not-defined: "&cSpawn is not defined."
+no-back: "&cYou have nowhere to go."

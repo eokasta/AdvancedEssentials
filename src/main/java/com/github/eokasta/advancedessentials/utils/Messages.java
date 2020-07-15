@@ -37,4 +37,24 @@ public class Messages {
         return Helper.format(safeOf(path));
     }
 
+    public String of(String path, String... args) throws MessageNotExistsException {
+        if (file.getConfig().getString(path) == null)
+            throw new MessageNotExistsException(path);
+
+        return String.format(file.getConfig().getString(path), args);
+    }
+
+    public String safeOf(String path, String... args) {
+        try {
+            return of(path, args);
+        } catch (MessageNotExistsException e) {
+            return e.getMessage();
+        }
+    }
+
+    public String formatted(String path, String... args) {
+        return Helper.format(safeOf(path), args);
+    }
+
+
 }

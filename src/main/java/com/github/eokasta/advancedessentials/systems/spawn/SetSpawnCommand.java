@@ -12,7 +12,8 @@ import org.bukkit.entity.Player;
 @Getter
 @CommandInformation(name = "setspawn",
         onlyPlayer = true,
-        permission = Helper.COMMAND_PERMISSION + "setspawn")
+        permission = Helper.COMMAND_PERMISSION + "setspawn",
+        description = "Set the server spawn point")
 public class SetSpawnCommand extends CLCommand {
 
     private final AdvancedEssentials plugin;

@@ -6,6 +6,8 @@ import com.github.eokasta.advancedessentials.utils.Settings;
 import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.text.MessageFormat;
+
 @Getter
 public class AdvancedEssentials extends JavaPlugin {
 

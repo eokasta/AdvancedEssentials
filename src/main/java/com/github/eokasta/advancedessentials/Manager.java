@@ -1,5 +1,6 @@
 package com.github.eokasta.advancedessentials;
 
+import com.github.eokasta.advancedessentials.systems.back.BackSystem;
 import com.github.eokasta.advancedessentials.systems.spawn.SetSpawnCommand;
 import com.github.eokasta.advancedessentials.systems.spawn.SpawnCommand;
 import lombok.Data;
@@ -9,10 +10,15 @@ public class Manager {
 
     private final AdvancedEssentials plugin;
 
+    private SetSpawnCommand setSpawnCommand;
+    private SpawnCommand spawnCommand;
+    private BackSystem backSystem;
+
     public Manager(AdvancedEssentials plugin) {
         this.plugin = plugin;
 
-        new SetSpawnCommand(plugin);
-        new SpawnCommand(plugin);
+        this.setSpawnCommand = new SetSpawnCommand(plugin);
+        this.spawnCommand = new SpawnCommand(plugin);
+        this.backSystem = new BackSystem(plugin);
     }
 }
