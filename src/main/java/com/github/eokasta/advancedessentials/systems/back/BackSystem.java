@@ -22,7 +22,7 @@ import java.util.Map;
 @CommandInformation(name = {"back", "voltar"},
         permission = Helper.COMMAND_PERMISSION + "back",
         onlyPlayer = true,
-        description = "Go back to the last place where you teleported.")
+        description = "Go back to the last place where you teleported")
 public class BackSystem extends CLCommand implements Listener {
 
     private final AdvancedEssentials plugin;
