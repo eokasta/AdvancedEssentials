@@ -43,4 +43,12 @@ public class Helper {
         return new Location(world, x, y, z, yaw, pitch);
     }
 
+    public static Double getDouble(String string) {
+        try {
+            return Double.parseDouble(string);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
 }

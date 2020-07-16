@@ -1,7 +1,15 @@
 no-permission: "&cYou don't has permission."
+# {0} = Name
 player-not-found: "&cPlayer {0} not found."
+# {0} = Usage, {1} = Description
+syntax-error: "&cUse: {0} - {1}"
 set-spawn: "&aYou have defined the spawn point."
 teleported-spawn: "&aYou have been teleported to Spawn."
+# {0} = Player name
 teleported-spawn-other: "&aYou teleported player {0} to Spawn."
 spawn-not-defined: "&cSpawn is not defined."
 no-back: "&cYou have nowhere to go."
+# {0} = Player name or Coordinate
+teleported-to: "&aYou have been teleported to &f{0}&a."
+# {0} = Target name, {1} = Player name or coordinate
+teleport-other: "&aYou teleported the player &f{0}&a to &f{1}&a."
