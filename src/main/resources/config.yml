@@ -1,5 +1,8 @@
 message-language: en
 
+# When a player join the server, teleport him to Spawn.
+to-spawn-on-join: true
+
 # Teleport Types: NETHER_PORTAL, ENDER_PEARL, END_PORTAL, PLUGIN, COMMAND, UNKNOWN, SPECTATE, DEATH
 block-back-with:
   - 'END_PORTAL'
