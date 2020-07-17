@@ -9,6 +9,9 @@
 * <b>/spawn [player]</b> - Teleport someone to the spawn - <b>advancedessentials.command.spawn.other</b>
 * <b>/back</b> - Go back to the last place where you teleported - <b>advancedessentials.command.back</b>
 * <b>/tp [player]</b> - Teleport to a player - <b>advancedessentials.command.teleport</b>
-* <b>/tp [player] [target]</b> - Teleport a player to another player. - <b>advancedessentials.command.teleport.other</b>
+* <b>/tp [player] [target]</b> - Teleport a player to another player - <b>advancedessentials.command.teleport.other</b>
 * <b>/tp [x] [y] [z]</b> - Teleport to a coordinate - <b>advancedessentials.command.teleport</b>
-* <b>/tp [x] [y] [z] [target]</b> - Teleport a player to a coordinate. - <b>advancedessentials.command.teleport.other</b>
+* <b>/tp [x] [y] [z] [target]</b> - Teleport a player to a coordinate - <b>advancedessentials.command.teleport.other</b>
+* <b>/setwarp [warp]</b> - Set a new warp where you are - <b>advancedessentials.command.setwarp</b>
+* <b>/warp [warp]</b> - Teleport to a warp - <b>advancedessentials.command.warp.[warpname]</b>
+* <b>/warp [warp] [player]</b> - Teleport a player to a warp - <b>advancedessentials.command.warp.other</b>

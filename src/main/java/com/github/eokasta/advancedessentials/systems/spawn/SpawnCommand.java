@@ -6,6 +6,7 @@ import com.github.eokasta.advancedessentials.utils.Helper;
 import com.github.eokasta.commandlib.CommandLib;
 import com.github.eokasta.commandlib.annotations.CommandInformation;
 import com.github.eokasta.commandlib.exceptions.CommandLibException;
+import com.github.eokasta.commandlib.exceptions.SyntaxCommandException;
 import com.github.eokasta.commandlib.providers.CLCommand;
 import lombok.Getter;
 import org.bukkit.Bukkit;
@@ -37,7 +38,7 @@ public class SpawnCommand extends CLCommand {
             if (args.length > 0 && sender.hasPermission(Helper.COMMAND_PERMISSION + "spawn.other")) {
                 final Player target = Bukkit.getPlayerExact(args[0]);
                 if (target == null)
-                    throw new CommandLibException(
+                    throw new SyntaxCommandException(
                             MessageFormat.format(plugin.getMessages().formatted("player-not-found"), args[0])
                     );
 

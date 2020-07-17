@@ -1,11 +1,11 @@
 package com.github.eokasta.advancedessentials.systems.teleport;
 
 import com.github.eokasta.advancedessentials.AdvancedEssentials;
-import com.github.eokasta.advancedessentials.exceptions.SyntaxCommandException;
 import com.github.eokasta.advancedessentials.utils.Helper;
 import com.github.eokasta.commandlib.CommandLib;
 import com.github.eokasta.commandlib.annotations.CommandInformation;
 import com.github.eokasta.commandlib.exceptions.CommandLibException;
+import com.github.eokasta.commandlib.exceptions.SyntaxCommandException;
 import com.github.eokasta.commandlib.providers.CLCommand;
 import lombok.Getter;
 import org.bukkit.Bukkit;
@@ -123,7 +123,7 @@ public class TeleportCommand extends CLCommand {
                 message(MessageFormat.format(plugin.getMessages().formatted("teleport-other"), target.getName(), stringBuilder));
             }
 
-        } catch (SyntaxCommandException | CommandLibException e) {
+        } catch (CommandLibException e) {
             message(e.getMessage());
         }
     }

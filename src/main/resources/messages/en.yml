@@ -13,3 +13,15 @@ no-back: "&cYou have nowhere to go."
 teleported-to: "&aYou have been teleported to &f{0}&a."
 # {0} = Target name, {1} = Player name or coordinate
 teleport-other: "&aYou teleported the player &f{0}&a to &f{1}&a."
+# {0} = Warp name
+warp-setted: "&aYou have set the warp &f{0}&a."
+# {0} = Name
+warp-not-found: "&cWarp &f{0} &cis not exist."
+# {0} = Warp name
+teleport-to-warp: "&aYou have been teleport to &f{0}&a."
+# {0} = Warp name
+no-permission-to-teleport-warp: "&cYou dont has permission to teleport to warp &f{0}&c."
+# {0} = Warp name
+warp-deleted: "&cYou have delete the warp &f{0}&c."
+# {0} = Warp name
+teleport-warp-other: "&aYou teleported player {0} to warp {1}."

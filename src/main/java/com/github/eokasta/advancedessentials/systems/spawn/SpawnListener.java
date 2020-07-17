@@ -28,7 +28,9 @@ public class SpawnListener implements Listener {
         if (plugin.getSettings().getConfig().getBoolean("to-spawn-on-join", false)) {
             try {
                 player.teleport(plugin.getLocations().of("spawn"), PlayerTeleportEvent.TeleportCause.PLUGIN);
-            } catch (LocationNotExistsException e) { player.sendMessage(e.getMessage()); }
+            } catch (LocationNotExistsException e) {
+                player.sendMessage(plugin.getMessages().formatted("spawn-not-defined"));
+            }
         }
     }
 
